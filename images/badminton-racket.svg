@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650">
+  <defs>
+    <linearGradient id="table" x2="0" y2="1">
+      <stop stop-color="#dfc7a6"/>
+      <stop offset="1" stop-color="#b89168"/>
+    </linearGradient>
+    <linearGradient id="racket" x2="1" y2="1">
+      <stop stop-color="#f8f4e8"/>
+      <stop offset=".55" stop-color="#ded9c8"/>
+      <stop offset="1" stop-color="#bcb8aa"/>
+    </linearGradient>
+    <linearGradient id="grip" x2="1" y2="1">
+      <stop stop-color="#383c35"/>
+      <stop offset="1" stop-color="#171a17"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="13"/>
+      <feOffset dy="12"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".28"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grain" width="160" height="90" patternUnits="userSpaceOnUse">
+      <path d="M0 16h160M0 57h160" stroke="#805d40" stroke-opacity=".12" stroke-width="2"/>
+      <path d="M12 32c34-7 58 8 96 1m-83 43c22 5 54-8 103-2" fill="none" stroke="#f0ddbd" stroke-opacity=".24" stroke-width="3"/>
+    </pattern>
+    <clipPath id="head"><ellipse cx="315" cy="228" rx="150" ry="187" transform="rotate(32 315 228)"/></clipPath>
+  </defs>
+  <rect width="900" height="650" fill="url(#table)"/>
+  <rect width="900" height="650" fill="url(#grain)"/>
+  <path d="M0 115c230-22 420 24 900-10M0 488c308 18 568-23 900 8" fill="none" stroke="#8c6949" stroke-opacity=".15" stroke-width="5"/>
+  <g transform="rotate(-27 450 330)" filter="url(#shadow)">
+    <ellipse cx="315" cy="228" rx="160" ry="199" fill="#353c35"/>
+    <ellipse cx="315" cy="228" rx="148" ry="186" fill="url(#racket)" stroke="#f6f1e4" stroke-width="5"/>
+    <g clip-path="url(#head)" opacity=".55">
+      <path d="M170 58l290 342M200 37l290 342M230 20l290 342M260 4l290 342M290-10l290 342" stroke="#738177" stroke-width="2"/>
+      <path d="M475 64L170 397M450 35L145 368M422 13L117 346M393-6L88 327M365-22L60 311" stroke="#738177" stroke-width="2"/>
+    </g>
+    <path d="M315 408l-8 148" stroke="#d7d0bc" stroke-width="22" stroke-linecap="round"/>
+    <path d="M307 541l-5 83" stroke="url(#grip)" stroke-width="29" stroke-linecap="round"/>
+    <path d="M295 556l25-9m-29 25l25-9m-29 25l25-9m-29 25l23-8" stroke="#b6b5aa" stroke-opacity=".7" stroke-width="3"/>
+    <path d="M264 192c33-17 63-17 96 2" fill="none" stroke="#718a72" stroke-width="8" stroke-linecap="round"/>
+    <path d="M319 226l58-65-5 90z" fill="#fcfcf7" stroke="#cac7ba" stroke-width="3"/>
+    <path d="M322 225l47-52m-50 52l43-36m-42 38l37-21" stroke="#b6b5aa" stroke-width="2"/>
+    <path d="M377 160l-7 90" stroke="#b8b9af" stroke-width="3"/>
+  </g>
+  <rect x="22" y="22" width="856" height="606" rx="12" fill="none" stroke="#fff9ee" stroke-opacity=".28" stroke-width="2"/>
+</svg>

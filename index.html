@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f5ef">
+  <title>UniMart — Thapar Student Marketplace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" data-page="dashboard" aria-label="UniMart home">
+        <span class="brand-mark">u</span>
+        <span>uni<span class="brand-accent">mart</span><small>THAPAR COMMUNITY</small></span>
+      </a>
+      <div class="campus-note"><span class="campus-dot"></span> THAPAR CAMPUS <span class="campus-year">’26</span></div>
+      <nav class="side-nav" aria-label="Main navigation">
+        <p class="nav-caption">MENU</p>
+        <a href="#" class="nav-link active" data-page="dashboard"><span class="nav-icon">⌂</span> Dashboard</a>
+        <a href="#" class="nav-link" data-page="marketplace"><span class="nav-icon">⌕</span> Marketplace <span class="nav-arrow">↗</span></a>
+        <a href="#" class="nav-link" data-page="listings"><span class="nav-icon">▤</span> My listings</a>
+        <a href="#" class="nav-link" data-page="wishlist"><span class="nav-icon">♡</span> Wishlist <span class="nav-count" id="wishlist-count">0</span></a>
+        <a href="#" class="nav-link" data-page="enquiries"><span class="nav-icon">✉</span> My enquiries</a>
+        <p class="nav-caption nav-caption-spaced">YOUR SPACE</p>
+        <a href="#" class="nav-link" data-page="profile"><span class="nav-icon">◉</span> My profile</a>
+        <a href="#" class="nav-link" data-page="settings"><span class="nav-icon">⚙</span> Settings</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="safety-card"><span class="safety-icon">✳</span><strong>Campus-safe trades</strong><p>Meet in public campus spots. UniMart never handles payments.</p></div>
+        <button class="profile-chip" id="profile-shortcut" type="button">
+          <span class="avatar" id="sidebar-avatar">AS</span>
+          <span class="profile-chip-text"><strong id="sidebar-name">Aarav Sharma</strong><small id="sidebar-branch">Computer Engineering</small></span>
+          <span class="chip-more">•••</span>
+        </button>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu icon-button" id="mobile-menu" aria-label="Open menu">☰</button>
+        <div class="breadcrumbs"><span>Campus</span><i>/</i><strong id="breadcrumb-current">Dashboard</strong></div>
+        <div class="topbar-actions">
+          <label class="top-search"><span>⌕</span><input id="global-search" type="search" placeholder="Search anything..." autocomplete="off"><kbd>⌘ K</kbd></label>
+          <button class="icon-button theme-toggle" id="theme-toggle" aria-label="Switch theme" title="Switch theme">☼</button>
+          <button class="icon-button notification-button" id="notification-button" aria-label="Notifications">♧<i></i></button>
+          <button class="top-avatar avatar" id="top-avatar" aria-label="Open profile">AS</button>
+        </div>
+      </header>
+      <div class="content" id="content" tabindex="-1"></div>
+      <footer class="footer"><span>© 2026 UniMart · Made for the Thapar community</span><span>Buy nearby. Reuse happily. <b>♥</b></span></footer>
+    </main>
+  </div>
+  <div class="mobile-backdrop" id="mobile-backdrop"></div>
+  <div class="toast-region" id="toast-region" aria-live="polite"></div>
+  <div class="modal-root" id="modal-root"></div>
+</body>
+</html>

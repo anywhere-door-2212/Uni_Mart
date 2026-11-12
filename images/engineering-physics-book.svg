@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650">
+  <defs>
+    <linearGradient id="desk" x2="0" y2="1">
+      <stop stop-color="#ded1bd"/>
+      <stop offset="1" stop-color="#bd9e7a"/>
+    </linearGradient>
+    <linearGradient id="cover" x2="1" y2="1">
+      <stop stop-color="#23433e"/>
+      <stop offset=".55" stop-color="#17312e"/>
+      <stop offset="1" stop-color="#0e2423"/>
+    </linearGradient>
+    <linearGradient id="pages" x2="0" y2="1">
+      <stop stop-color="#fffdf3"/>
+      <stop offset="1" stop-color="#d8d1c1"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-30%" width="150%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="14"/>
+      <feOffset dy="14"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grain" width="150" height="90" patternUnits="userSpaceOnUse">
+      <path d="M0 24h150M0 68h150" stroke="#75583e" stroke-opacity=".1" stroke-width="2"/>
+      <path d="M14 44c40-10 66 8 120-1" fill="none" stroke="#f8ead2" stroke-opacity=".22" stroke-width="3"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="650" fill="url(#desk)"/>
+  <rect width="900" height="650" fill="url(#grain)"/>
+  <g transform="rotate(-8 455 325)" filter="url(#shadow)">
+    <path d="M205 170l475-39 37 359-474 42z" fill="url(#pages)" stroke="#c6bcaa" stroke-width="4"/>
+    <path d="M190 145l475-39 41 374-474 42z" fill="#eee8d8" stroke="#c0b49f" stroke-width="4"/>
+    <path d="M172 125l475-39 44 380-475 39z" fill="url(#cover)" stroke="#122624" stroke-width="5"/>
+    <path d="M172 125l40-3 44 380-40 3z" fill="#102522"/>
+    <path d="M186 146l29-2 37 333-29 3z" fill="#d2a35d"/>
+    <path d="M291 187h254M291 198h205" stroke="#e8d2a2" stroke-opacity=".45" stroke-width="2"/>
+    <text x="284" y="245" fill="#e8d9b8" font-family="Georgia,serif" font-size="24" letter-spacing="3">B.TECH • CORE TEXT</text>
+    <text x="284" y="302" fill="#fff6df" font-family="Georgia,serif" font-size="43" font-weight="bold">ENGINEERING</text>
+    <text x="284" y="355" fill="#fff6df" font-family="Georgia,serif" font-size="45" font-weight="bold">PHYSICS</text>
+    <text x="287" y="387" fill="#d8c99e" font-family="Arial,sans-serif" font-size="15" letter-spacing="2">MECHANICS · WAVES · OPTICS</text>
+    <g fill="none" stroke="#e5c777" stroke-width="2.5" opacity=".8">
+      <circle cx="480" cy="433" r="44"/>
+      <ellipse cx="480" cy="433" rx="68" ry="23"/>
+      <ellipse cx="480" cy="433" rx="68" ry="23" transform="rotate(60 480 433)"/>
+      <ellipse cx="480" cy="433" rx="68" ry="23" transform="rotate(120 480 433)"/>
+      <circle cx="480" cy="433" r="7" fill="#e5c777"/>
+    </g>
+    <text x="284" y="466" fill="#d8c99e" font-family="Georgia,serif" font-size="17">E = mc²</text>
+    <path d="M580 180l47-4 35 314-47 4z" fill="#e5d6b7" opacity=".5"/>
+  </g>
+  <rect x="22" y="22" width="856" height="606" rx="12" fill="none" stroke="#fff9ee" stroke-opacity=".3" stroke-width="2"/>
+</svg>
